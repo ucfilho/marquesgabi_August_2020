@@ -1,8 +1,8 @@
 import numpy as np
 import mahotas
 def Mahotas_PSD(Size,Foto,Sub_Size,Escolha):    
+    
     Prop_Escolhida=[]
-
     p_foto=Foto
     GLCM=[]
     glcm_haralick=[]
@@ -31,4 +31,6 @@ def Mahotas_PSD(Size,Foto,Sub_Size,Escolha):
 
     Todas_Fotos.append(Prop_Escolhida)
 
-df_mahotas=pd.DataFrame(Todas_Fotos)
+    df_mahotas=pd.DataFrame(Todas_Fotos)
+    
+    return(df_mahotas)
